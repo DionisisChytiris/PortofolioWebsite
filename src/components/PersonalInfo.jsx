@@ -88,7 +88,8 @@ function PersonalInfo() {
           <div className="absolute top-3 md:top-6 right-6 w-[100px] h-[100px]  sm:w-[140px] sm:h-[140px] md:w-[180px] md:h-[180px] rounded-full overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.15)] z-10 flex items-center justify-center">
             <div className="absolute top-[-50px] left-[-20px] right-[-20px] bg-[#43ee6e] opacity-10 rounded-full -z-10"></div>
             <img
-              src="https://api.a0.dev/assets/image?text=Professional+Developer+Portrait+with+modern+background&aspect=1:1&seed=dev123"
+            src="profile.jpg"
+              // src="https://api.a0.dev/assets/image?text=Professional+Developer+Portrait+with+modern+background&aspect=1:1&seed=dev123"
               alt="Developer portrait"
               className="w-full h-full object-cover"
             />

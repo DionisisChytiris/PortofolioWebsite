@@ -16,7 +16,7 @@ export const webProjects =  [
     description:
       "Sophisticated real estate platform featuring interactive map-based search, virtual tours, mortgage calculator, and secure agent-client communication portal.",
     technologies: [
-      "Next.js",
+      "NestJs",
       "PostgreSQL",
       "Google Maps API",
       "Auth0",

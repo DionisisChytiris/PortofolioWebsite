@@ -11,6 +11,8 @@ import {
   SiTailwindcss,
   SiRedux,
    SiPython,
+   SiVercel,
+   SiDocker,
   SiPostman,
 } from "react-icons/si";
 import { MdDevices } from "react-icons/md";
@@ -67,6 +69,7 @@ function About() {
             </h4>
             <div className="flex flex-wrap">
               <div className="flex-none basis-1/2 min-w-[250px] mb-6">
+              {/* <div className="flex-none basis-1/3  mb-6"> */}
                 <h5 className="skill-category-title">Frontend</h5>
                 <div className="skills-list">
                   <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
@@ -120,8 +123,76 @@ function About() {
                 </div>
               </div>
 
-              <div className="skill-category">
+              <div className="flex-none basis-1/2 min-w-[250px] mb-6">
                 <h5 className="skill-category-title">Backend</h5>
+                <div className="skills-list">
+                  <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
+                    <SiNodedotjs className="text-green-700 dark:text-green-300 hover:scale-110 transition-transform duration-300 text-[1rem] mr-2" />
+                    <span className="text-base text-gray-600 dark:text-gray-300">
+                      Node.js & Express
+                    </span>
+                  </div>
+                  <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
+                    <SiNestjs className="text-red-600 text-[1rem] mr-2" />
+                    <span className="text-base text-gray-600 dark:text-gray-300">
+                      AWS & Firebase
+                    </span>
+                  </div>
+                  <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
+                    <SiMongodb className="text-green-600 text-[1rem] mr-2" />
+                    <span className="text-base text-gray-600 dark:text-gray-300">
+                      MongoDB
+                    </span>
+                  </div>
+                  <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
+                    <SiPostgresql className="text-blue-700 dark:text-blue-200 text-[1rem] mr-2" />
+                    <span className="text-base text-gray-600 dark:text-gray-300">
+                      PostgreSQL
+                    </span>
+                  </div>
+                  <h5 className="skill-category-title mt-12">Extras</h5>
+                  <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
+                    <SiPython className="text-green-700 dark:text-green-200 text-[1rem] mr-2" />
+                    <span className="text-base text-gray-600 dark:text-gray-300">
+                      Python
+                    </span>
+                  </div>
+                  <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
+                    <SiVercel className="text-black dark:text-white text-[1rem] mr-2" />
+                    <span className="text-base text-gray-600 dark:text-gray-300">
+                      Vercel
+                    </span>
+                  </div>
+                  <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
+                     <img src='render.png' alt="Description" className="w-6 h-auto bg-gray-400 rounded-md mr-2 -ml-1" />
+                    <span className="text-base text-gray-600 dark:text-gray-300">
+                      Render
+                    </span>
+                  </div>
+                  <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
+                    <img src='neon1.png' alt="Description" className="w-6 h-auto rounded-md mr-2 -ml-1" />
+                    <span className="text-base text-gray-600 dark:text-gray-300">
+                      Neon
+                    </span>
+                  </div>
+                  <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
+                    <SiDocker className="text-blue-500 dark:text-blue-300 text-[1rem] mr-2" />
+                    <span className="text-base text-gray-600 dark:text-gray-300">
+                      Docker
+                    </span>
+                  </div>
+                  <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
+                    <SiPostman className="text-orange-500 dark:text-orange-300 text-[1rem] mr-2" />
+                    <span className="text-base text-gray-600 dark:text-gray-300">
+                      Postman
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+
+              {/* <div className="skill-category">
+                <h5 className="skill-category-title">Extra</h5>
                 <div className="skills-list">
                   <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
                     <SiNodedotjs className="text-green-700 dark:text-green-300 hover:scale-110 transition-transform duration-300 text-[1rem] mr-2" />
@@ -153,14 +224,8 @@ function About() {
                       Python
                     </span>
                   </div>
-                  {/* <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
-                    <i className="fas fa-check-circle"></i>
-                    <span className="text-base text-gray-600 dark:text-gray-300">
-                      CI/CD & DevOps
-                    </span>
-                  </div> */}
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
