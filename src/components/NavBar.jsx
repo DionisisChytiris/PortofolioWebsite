@@ -59,6 +59,23 @@ function NavBar() {
     // document.getElementById(section).scrollIntoView({ behavior: "smooth" });
   };
 
+  const scrollToSection1 = (section) => {
+    setActiveSection(section);
+    const element = document.getElementById(section);
+    const offset = 120; // Adjust this based on your navbar height
+
+    if (element) {
+      const top =
+        element.getBoundingClientRect().top + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top,
+        behavior: "smooth",
+      });
+    }
+    // document.getElementById(section).scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <header className="flex flex-col md:flex-row justify-between items-center px-[5%] py-6 bg-white/95 dark:bg-gray-900 dark:shadow-[0_4px_6px_-1px_rgba(255,255,255,0.15)] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)]  sticky top-0 z-[100] backdrop-blur-md">
       <Link to="/" onClick={() => dispatch(!toggle())}>
@@ -91,19 +108,20 @@ function NavBar() {
       </div>
 
       {!isHomePage ? (
+        // Project Navbar
         <div className="flex justify-center ">
           <Link
             to="/"
-            className="text-gray-200 mt-2 hover:text-gray-400"
+            className="text-gray-600 mt-[5px] dark:text-gray-400 hover:scale-110 transition-transform duration-300 text-[18px]"
             onClick={() => dispatch(toggle())}
           >
             Portofolio
           </Link>
           <nav className="flex">
-            {["projects","about", "contact"].map((section) => (
+            {["Gallery","Challenges"].map((section) => (
               <div
                 key={section}
-                onClick={() => scrollToSection(section)}
+                onClick={() => scrollToSection1(section)}
                 className={`
             ml-6 relative cursor-pointer text-base py-2
             transition-colors duration-300 
@@ -125,6 +143,7 @@ function NavBar() {
           </nav>
         </div>
       ) : (
+        // Main Navbar 
         <nav className="flex">
           {["home", "projects", "about", "contact"].map((section) => (
             <div

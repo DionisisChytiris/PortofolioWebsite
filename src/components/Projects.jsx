@@ -4,6 +4,7 @@ import { mobileProjects } from "../data/MobileProjects";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { toggle } from "../redux/NavBooleanSlice";
+import { MousePointer, MousePointerClick } from "lucide-react"
 
 function Projects() {
   const dispatch = useDispatch();
@@ -37,10 +38,12 @@ function Projects() {
                   <img
                     src={project.imageUrl}
                     alt={project.title}
-                    className="project-image"
+                    className="project-image object-top"
                   />
-                  <div className="project-overlay">
-                    <div className="project-link">Link</div>
+                  <div className="project-overlay absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                    <div className="project-link">
+                       <MousePointerClick className="w-8 h-8 text-gray-800" />
+                    </div>
                   </div>
                 </div>
                 <div className="p-6 flex-1 flex flex-col">
@@ -77,11 +80,11 @@ function Projects() {
                   <img
                     src={project.imageUrl}
                     alt={project.title}
-                    className="project-image"
+                    className="project-image object-top"
                   />
                   <div className="project-overlay">
                     <a href={project.link} className="project-link">
-                      <i className="fas fa-external-link-alt"></i>
+                      <MousePointerClick className="w-8 h-8 text-gray-800" />
                     </a>
                   </div>
                 </div>

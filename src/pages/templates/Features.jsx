@@ -10,7 +10,7 @@ function Features({ project }) {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {project.features.map((feature, index) => (
-          <div key={index} className="flex items-start gap-3">
+          <div key={index} className="flex items-start gap-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
             <CheckCircle className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" />
             <span className="text-gray-700 dark:text-gray-200">{feature}</span>
           </div>

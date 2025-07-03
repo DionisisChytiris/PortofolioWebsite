@@ -19,7 +19,7 @@ function Technologies({ project }) {
             {project.technologies.map((tech) => (
               <span
                 key={tech}
-                className="px-3 py-1 bg-blue-50 dark:bg-gray-700  text-blue-700  dark:text-blue-200 rounded-full text-sm font-medium"
+                className="px-3 py-1 bg-blue-50 dark:bg-gray-700  text-blue-700  dark:text-blue-200 rounded-full text-sm font-medium transition-all duration-300 ease-in-out hover:-translate-y-[2px]"
               >
                 {tech}
               </span>
@@ -34,7 +34,7 @@ function Technologies({ project }) {
             {project.languages.map((language) => (
               <span
                 key={language}
-                className="px-3 py-1 bg-emerald-50 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-200 rounded-full text-sm font-medium"
+                className="px-3 py-1 bg-emerald-50 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-200 rounded-full text-sm font-medium transition-all duration-300 ease-in-out hover:-translate-y-[2px]"
               >
                 {language}
               </span>

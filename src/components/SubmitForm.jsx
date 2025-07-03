@@ -21,11 +21,11 @@ function SubmitForm() {
       nameInputRef.current?.focus();
       return;
     }
-    
+
     if (!email.trim() && !email.includes("@")) {
-        alert("Please insert you email!");
-        emailInputRef.current?.focus();
-        return;
+      alert("Please insert you email!");
+      emailInputRef.current?.focus();
+      return;
     }
     if (!message.trim()) {
       alert("Please insert you message!");
@@ -34,8 +34,8 @@ function SubmitForm() {
     }
 
     // const client_id = await AsyncStorage.getItem("analytics_client_id");
-    const client_id = "Portofolio Website";
-
+    const randomPart = Math.random().toString(36).substring(2, 8); // 6-char string
+    const client_id = `Portofolio Website - ${randomPart}`;
     // if (!client_id) {
     //   alert("Client ID is required. Please try again.");
     //   return;
