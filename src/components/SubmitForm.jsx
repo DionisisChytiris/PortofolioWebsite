@@ -34,8 +34,9 @@ function SubmitForm() {
     }
 
     // const client_id = await AsyncStorage.getItem("analytics_client_id");
-    const randomPart = Math.random().toString(36).substring(2, 8); // 6-char string
-    const client_id = `Portofolio Website - ${randomPart}`;
+    // const randomPart = Math.random().toString(36).substring(2, 8); // 6-char string
+    // const client_id = `Portofolio Website - ${randomPart}`;
+    const client_id = Math.random().toString(36).substring(2, 8); // 6-char string
     // if (!client_id) {
     //   alert("Client ID is required. Please try again.");
     //   return;
@@ -50,6 +51,7 @@ function SubmitForm() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
+            app_id: "portofolio-website",
             client_id,
             name: name.trim(),
             email: email.trim(),
