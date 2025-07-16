@@ -25,14 +25,18 @@ const project = {
   languages: ["JavaScript", "TypeScript"],
   fullDescription:
     " Comprehensive color system with primary blue If youre planning to display multiple projects in the future, then change ProjectGallery to accept a projects array and iterate like",
+  media: [
+    { type: "image", src: "greekGeoApp/img1pro.png" },
+    { type: "video", src: "quizVid1.mp4" },
+    { type: "image", src: "greekGeoApp/quizApp1.png" },
+    { type: "image", src: "greekGeoApp/quizApp2.png" },
+    { type: "video", src: "quizVid2.mp4" },
+  ],
   images: [
     "greekGeoApp/img1pro.png",
     "meteora.jpg",
-    "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "https://images.pexels.com/photos/3775566/pexels-photo-3775566.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "https://images.pexels.com/photos/4162494/pexels-photo-4162494.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "https://images.pexels.com/photos/3768905/pexels-photo-3768905.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "greekGeoApp/quizApp1.png",
+    "greekGeoApp/quizApp2.png",
   ],
   features: [
     "Kanban board interface",
@@ -51,9 +55,10 @@ const project = {
   ],
   completionDate: "October 2024",
   iosLink: "https://apps.apple.com/app/id6504780092",
-  androidLink: "https://play.google.com/store/apps/details?id=com.greekgeographyquizapp.dion&pli=1",
+  androidLink:
+    "https://play.google.com/store/apps/details?id=com.greekgeographyquizapp.dion&pli=1",
   githubLink: "https://github.com/DionisisChytiris/GreekGeographyQuizUpdate",
-  projectQRcode:"greekGeoApp/GreekGeographySmartLink.png"
+  projectQRcode: "greekGeoApp/GreekGeographySmartLink.png",
 };
 
 let screenshotsMobile = [

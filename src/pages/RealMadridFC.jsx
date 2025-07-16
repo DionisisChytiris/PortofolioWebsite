@@ -18,6 +18,18 @@ const project = {
   languages: ["JavaScript", "HTML", "CSS"],
   fullDescription:
     " Comprehensive color system with primary blue If youre planning to display multiple projects in the future, then change ProjectGallery to accept a projects array and iterate like",
+  media: [
+    { type: "image", src: '/websites/real1.png' },
+    { type: "image", src: '/websites/real2.png' },
+    { type: "image", src: '/websites/real3.png' },
+    { type: "image", src: '/websites/real4.png' },
+    { type: "image", src: '/websites/real5.png' },
+    { type: "image", src: '/websites/real6.png' },
+    { type: "image", src: '/websites/real7.png' },
+    { type: "image", src: '/websites/real9.png' },
+    { type: "image", src: '/websites/real10.png' },
+    { type: "video", src: "quizVid1.mp4" },
+  ],
   images: [
     '/websites/real1.png',
     '/websites/real2.png',
@@ -49,7 +61,8 @@ const project = {
     "Optimizing database queries for large datasets",
     "Creating responsive design for all devices",
   ],
-  completionDate: "October 2024",
+  websiteLink:"https://real-madrid-website.vercel.app/",
+  githubLink:"https://github.com/DionisisChytiris/RealMadridWebsite"
 };
 
 function RealMadridFC() {
@@ -63,7 +76,7 @@ function RealMadridFC() {
           {/* Project Header */}
           <ProjectHeader project={project} />
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-[100px]">
             {/* Main Content */}
             <div className="lg:col-span-2 space-y-8">
               {/* Image Gallery */}

@@ -21,10 +21,18 @@ const project = {
   languages: ["JavaScript", "TypeScript", "SQL"],
   fullDescription:
     " Comprehensive color system with primary blue If youre planning to display multiple projects in the future, then change ProjectGallery to accept a projects array and iterate like",
+   media: [
+    { type: "image", src: 'greekApp.png' },
+    { type: "image", src: '/websites/imgg1.png' },
+    { type: "image", src: '/websites/imgg2.png' },
+    { type: "image", src: '/websites/imgg3.png' },
+    // { type: "video", src: "quizVid1.mp4" },
+  ],  
   images: [
     'greekApp.png',
-    '/websites/greek1.png',
-    '/websites/greek2.png',
+    '/websites/imgg1.png',
+    '/websites/imgg2.png',
+    '/websites/imgg3.png',
     // "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=800",
     // 'https://images.pexels.com/photos/3775566/pexels-photo-3775566.jpeg?auto=compress&cs=tinysrgb&w=800',
     //  'https://images.pexels.com/photos/4162494/pexels-photo-4162494.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -46,7 +54,8 @@ const project = {
     "Optimizing database queries for large datasets",
     "Creating responsive design for all devices",
   ],
-  completionDate: "October 2024",
+  websiteLink:"https://greek-geography-app-website.vercel.app/",
+  githubLink:"https://github.com/DionisisChytiris/GreekGeographyAppWebsite"
 };
 
 
@@ -61,7 +70,7 @@ function GreekGeoWebsite() {
           {/* Project Header */}
           <ProjectHeader project={project} />
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-[100px]">
             {/* Main Content */}
             <div className="lg:col-span-2 space-y-8">
               {/* Image Gallery */}

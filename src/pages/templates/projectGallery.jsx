@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MousePointer, MousePointerClick } from "lucide-react"
+import { MousePointer, MousePointerClick } from "lucide-react";
 
 function ProjectGallery({ project }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -29,7 +29,37 @@ function ProjectGallery({ project }) {
         Project Gallery
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
-        {project.images.map((image, index) => (
+        {project.media.map((item, index) => (
+          <div
+            key={index}
+            className="relative group overflow-hidden rounded-xl shadow-lg shadow-black/20"
+            onClick={() => openModal(index)}
+          >
+            {item.type === "image" ? (
+              <img
+                src={item.src}
+                alt="image"
+                className="w-full h-24 sm:h-32 md:h-48 transition-transform duration-300 scale-125 group-hover:scale-100 object-cover"
+              />
+            ) : (
+              <video
+                src={item.src}
+                className="w-full h-24 sm:h-32 md:h-48 object-cover"
+                muted
+                loop
+                autoPlay
+                playsInline
+              />
+            )}
+
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
+
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+              <MousePointerClick className="w-8 h-8 text-gray-300" />
+            </div>
+          </div>
+        ))}
+        {/* {project.images.map((image, index) => (
           <div
             key={index}
             className="relative group overflow-hidden rounded-xl shadow-lg shadow-black/20"
@@ -46,7 +76,7 @@ function ProjectGallery({ project }) {
                 <MousePointerClick className="w-8 h-8 text-gray-300" />
               </div>
           </div>
-        ))}
+        ))} */}
       </div>
 
       {isModalOpen && (
@@ -64,11 +94,25 @@ function ProjectGallery({ project }) {
             >
               ✕
             </button>
-            <img
+            {/* <img
               src={project.images[currentIndex]}
               alt={`Large view ${currentIndex + 1}`}
               className="w-full max-h-[80vh] object-contain rounded-lg"
-            />
+            /> */}
+            {project.media[currentIndex].type === "image" ? (
+              <img
+                src={project.media[currentIndex].src}
+                alt={`Large view ${currentIndex + 1}`}
+                className="w-full max-h-[80vh] object-contain rounded-lg"
+              />
+            ) : (
+              <video
+                src={project.media[currentIndex].src}
+                controls
+                autoPlay
+                className="w-full max-h-[80vh] object-contain rounded-lg"
+              />
+            )}
 
             <button
               className="absolute -bottom-[100px] md:top-1/2  left-4 md:-left-10 transform -translate-y-1/2 text-white text-7xl px-4"

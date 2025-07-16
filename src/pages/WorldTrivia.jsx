@@ -21,11 +21,19 @@ const project = {
     "i18next",
     "Google Maps API",
     "Nest JS",
-    "PostgreSQL"
+    "PostgreSQL",
   ],
   languages: ["JavaScript", "TypeScript"],
   fullDescription:
     " Comprehensive color system with primary blue If youre planning to display multiple projects in the future, then change ProjectGallery to accept a projects array and iterate like",
+  media: [
+    { type: "image", src: "worldTriviaApp/graphic.png" },
+    { type: "video", src: "quizVid3.mp4" },
+    { type: "image", src: "/worldTriviaApp/logo2.png" },
+    { type: "image", src: "/worldTriviaApp/ntrmnt.webp" },
+    { type: "image", src: "/worldTriviaApp/worldmnt.webp" },
+    { type: "image", src: "/worldTriviaApp/flags.png" },
+  ],
   images: [
     "/worldTriviaApp/logo2.png",
     "/worldTriviaApp/ntrmnt.webp",
@@ -55,9 +63,10 @@ const project = {
   ],
   completionDate: "October 2024",
   iosLink: "https://apps.apple.com/gb/app/world-wise-trivia/id6670754535",
-  androidLink: "https://play.google.com/store/apps/details?id=com.worldwisetrivia.app",
+  androidLink:
+    "https://play.google.com/store/apps/details?id=com.worldwisetrivia.app",
   githubLink: "https://github.com/DionisisChytiris/WorldWiseTrivia_Main",
-  projectQRcode:"worldTriviaApp/worldwisesmartLInk.png"
+  projectQRcode: "worldTriviaApp/worldwisesmartLInk.png",
 };
 
 let screenshotsMobile = [
@@ -89,10 +98,13 @@ function WorldTrivia() {
     <div>
       <div className="h-auto bg-gray-200 dark:bg-gray-700 px-4 sm:px-8 md:px-16 lg:px-22  py-8">
         <div className="flex flex-row  gap-2 fixed top-[130px] md:top-[100px] right-4 md:right-10 rounded-xl bg-gray-500/80 text-white text-right text-[12px] md:text-[14px] py-2 px-4 z-50">
-          <img src="worldTriviaApp/logo2.png" className="w-5 h-5 object-contain" />
+          <img
+            src="worldTriviaApp/logo2.png"
+            className="w-5 h-5 object-contain"
+          />
           <div>World Wise Trivia App</div>
         </div>
-          <img src="worldTrivia/logo2.png" className="w-3 h-3 object-contain" />
+        <img src="worldTrivia/logo2.png" className="w-3 h-3 object-contain" />
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-8">
           {/* Project Header */}
           <ProjectHeader project={project} />

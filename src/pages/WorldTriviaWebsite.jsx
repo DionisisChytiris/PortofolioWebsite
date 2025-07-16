@@ -22,6 +22,15 @@ const project = {
   languages: ["JavaScript", "TypeScript", "SQL"],
   fullDescription:
     " Comprehensive color system with primary blue If youre planning to display multiple projects in the future, then change ProjectGallery to accept a projects array and iterate like",
+   media: [
+    { type: "image", src: "/worldTrivia.png" },
+    { type: "image", src: "/websites/trivia3.png" },
+    { type: "image", src: "/websites/trivia4.png" },
+    { type: "image", src: "/websites/trivia6.png" },
+    { type: "image", src: "/websites/trivia5.png" },
+    { type: "image", src: "/websites/trivia2.png" },
+    // { type: "video", src: "quizVid2.mp4" },
+  ],
   images: [
     '/worldTrivia.png',
     '/websites/trivia3.png',
@@ -50,7 +59,8 @@ const project = {
     "Optimizing database queries for large datasets",
     "Creating responsive design for all devices",
   ],
-  completionDate: "October 2024",
+  websiteLink:"https://world-wise-trivia-app-website.vercel.app/",
+  githubLink:"https://github.com/DionisisChytiris/WorldWiseTriviaAppWebsite"
 };
 
 function WorldTriviaWebsite() {
@@ -64,7 +74,7 @@ function WorldTriviaWebsite() {
           {/* Project Header */}
           <ProjectHeader project={project} />
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-[100px]">
             {/* Main Content */}
             <div className="lg:col-span-2 space-y-8">
               {/* Image Gallery */}
