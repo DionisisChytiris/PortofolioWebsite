@@ -62,16 +62,25 @@ const project = {
 };
 
 let screenshotsMobile = [
+  { phone: "greekgeoWebsite/photo01.png" },
   { phone: "greekGeoApp/img1.png" },
-  { phone: "greekGeoApp/img2.png" },
+  { phone: "greekgeoWebsite/photo1.png" },
+  { phone: "greekgeoWebsite/photo2.png" },
+  { phone: "greekgeoWebsite/photo3.png" },
+  // { phone: "greekGeoApp/img2.png" },
   { phone: "greekGeoApp/img3.png" },
-  { phone: "greekGeoApp/img4.png" },
-  { phone: "greekGeoApp/img5.png" },
-  { phone: "greekGeoApp/img6.png" },
-  { phone: "greekGeoApp/img7.png" },
+  { phone: "greekgeoWebsite/photo002.jpg" },
+  { phone: "greekgeoWebsite/photo7.png" },
+  // { phone: "greekGeoApp/img4.png" },
+  // { phone: "greekGeoApp/img7.png" },
+  // { phone: "greekGeoApp/img6.png" },
   { phone: "greekGeoApp/img8.png" },
+  { phone: "greekGeoApp/img5.png" },
   { phone: "greekGeoApp/img9.png" },
   { phone: "greekGeoApp/img10.png" },
+  { phone: "greekgeoWebsite/photo5.png" },
+  { phone: "greekgeoWebsite/photo4.png" },
+  { phone: "greekgeoWebsite/photo6.png" },
 ];
 
 let screenshotsTablet = [
