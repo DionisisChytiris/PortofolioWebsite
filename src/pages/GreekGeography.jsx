@@ -85,9 +85,18 @@ let screenshotsMobile = [
 
 let screenshotsTablet = [
   { phone: "meteora.jpg" },
-  { phone: "mainimg.png" },
-  { phone: "realMadrid.png" },
-  { phone: "worldTrivia.png" },
+  { phone: "googleGeoTablet/tablet1.png" },
+  { phone: "googleGeoTablet/tablet2.png" },
+  { phone: "googleGeoTablet/tablet3.png" },
+  { phone: "googleGeoTablet/tablet01.png" },
+  { phone: "googleGeoTablet/tablet4.png" },
+  { phone: "googleGeoTablet/tablet5.png" },
+  { phone: "googleGeoTablet/tablet6.png" },
+  { phone: "googleGeoTablet/tablet7.png" },
+  { phone: "googleGeoTablet/tablet8.png" },
+  { phone: "googleGeoTablet/tablet9.png" }
+  // { phone: "realMadrid.png" },
+  // { phone: "worldTrivia.png" },
 ];
 
 function GreekGeography() {
