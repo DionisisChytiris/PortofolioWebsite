@@ -19,6 +19,7 @@ const project = {
   fullDescription:
     " Comprehensive color system with primary blue If youre planning to display multiple projects in the future, then change ProjectGallery to accept a projects array and iterate like",
   media: [
+    { type: "video", src: "/websites/vid2.mp4" },
     { type: "image", src: '/websites/real1.png' },
     { type: "image", src: '/websites/real2.png' },
     { type: "image", src: '/websites/real3.png' },
@@ -28,7 +29,6 @@ const project = {
     { type: "image", src: '/websites/real7.png' },
     { type: "image", src: '/websites/real9.png' },
     { type: "image", src: '/websites/real10.png' },
-    // { type: "video", src: "quizVid1.mp4" },
   ],
   images: [
     '/websites/real1.png',
