@@ -28,14 +28,14 @@ function SocialMediaBtns() {
       >
         <FaYoutube className="text-red-600 text-[1.5rem]" />
       </a>
-      <a
+      {/* <a
         href="https://dribbble.com"
         target="_blank"
         rel="noopener noreferrer"
         className="social-button"
       >
         <i className="fab fa-dribbble"></i>
-      </a>
+      </a> */}
     </div>
   );
 }

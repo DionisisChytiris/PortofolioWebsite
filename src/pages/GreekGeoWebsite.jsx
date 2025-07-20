@@ -13,12 +13,11 @@ const project = {
   technologies: [
     "React",
     "Node.js",
-    "PostgreSQL",
-    "Socket.io",
-    "JWT",
+    "Express",
+    "MongoDB",
     "Tailwind CSS",
   ],
-  languages: ["JavaScript", "TypeScript", "SQL"],
+  languages: ["JavaScript"],
   fullDescription:
     " Comprehensive color system with primary blue If youre planning to display multiple projects in the future, then change ProjectGallery to accept a projects array and iterate like",
    media: [

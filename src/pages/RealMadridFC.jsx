@@ -13,7 +13,7 @@ const project = {
   technologies: [
     "React",
     "Vite",
-    "styled Components"
+    "Styled Components"
   ],
   languages: ["JavaScript", "HTML", "CSS"],
   fullDescription:
@@ -28,7 +28,7 @@ const project = {
     { type: "image", src: '/websites/real7.png' },
     { type: "image", src: '/websites/real9.png' },
     { type: "image", src: '/websites/real10.png' },
-    { type: "video", src: "quizVid1.mp4" },
+    // { type: "video", src: "quizVid1.mp4" },
   ],
   images: [
     '/websites/real1.png',

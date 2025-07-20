@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { toggle } from "../redux/NavBooleanSlice";
 import { MousePointer, MousePointerClick } from "lucide-react"
+import { ApiProjects } from "../data/ApiProjects";
 
 function Projects() {
   const dispatch = useDispatch();
@@ -74,6 +75,49 @@ function Projects() {
         </h3>
         <div className="project-grid">
           {webProjects.map((project) => (
+            <div key={project.id} className="project-card dark:bg-gray-500">
+              <Link to={project.link} onClick={() => dispatch(toggle())}>
+                <div className="project-image-container">
+                  <img
+                    src={project.imageUrl}
+                    alt={project.title}
+                    className="project-image object-top"
+                  />
+                  <div className="project-overlay">
+                    <a href={project.link} className="project-link">
+                      <MousePointerClick className="w-8 h-8 text-gray-800" />
+                    </a>
+                  </div>
+                </div>
+                <div className="p-6 flex-1 flex flex-col">
+                  <h3 className="text-xl font-bold text-[#212529] mb-3">
+                    {project.title}
+                  </h3>
+                  <p className="text-[0.9rem] font-bold text-[#212529] dark:text-gray-700 mb-6">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap mt-auto">
+                    {project.technologies.map((tech, index) => (
+                      <span
+                        key={index}
+                        className="tech-badge  dark:bg-gray-400 text-black dark:text-white"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
+
+
+        <h3 className="text-[1.3rem] lg:text-[1.6rem]  mt-[100px] text-[#495057]  dark:text-gray-400 mb-4 md:mb-8 font-semibold">
+          <span>APIs</span>
+        </h3>
+        <div className="project-grid">
+          {ApiProjects.map((project) => (
             <div key={project.id} className="project-card dark:bg-gray-500">
               <Link to={project.link} onClick={() => dispatch(toggle())}>
                 <div className="project-image-container">

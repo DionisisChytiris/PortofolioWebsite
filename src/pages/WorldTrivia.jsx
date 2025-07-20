@@ -61,7 +61,7 @@ const project = {
     "Optimizing database queries for large datasets",
     "Creating responsive design for all devices",
   ],
-  completionDate: "October 2024",
+  completionDate: "September 2024",
   iosLink: "https://apps.apple.com/gb/app/world-wise-trivia/id6670754535",
   androidLink:
     "https://play.google.com/store/apps/details?id=com.worldwisetrivia.app",

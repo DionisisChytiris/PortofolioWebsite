@@ -9,7 +9,7 @@ import {
   SiMongodb,
   SiPostgresql,
   SiTailwindcss,
-   SiPython
+  SiPython,
 } from "react-icons/si";
 
 function Front_Back_Icons() {
@@ -46,6 +46,11 @@ function Front_Back_Icons() {
       <div className="tech-icon dark:bg-gray-300">
         <SiPython className="text-green-500 text-[1.5rem]" />
       </div>
+      <img
+        src="/FastAPI.png"
+        alt="FastAPI"
+        className="tech-icon w-6 h-6"
+      />
     </div>
   );
 }

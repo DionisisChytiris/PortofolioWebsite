@@ -13,13 +13,14 @@ const project = {
   opacity: false,
   technologies: [
     "React",
+    "Redux Toolkit",
+    "i18next",
     "Node.js",
-    "PostgreSQL",
-    "Socket.io",
-    "JWT",
+    "MondoDB",
+    "Express",
     "Tailwind CSS",
   ],
-  languages: ["JavaScript", "TypeScript", "SQL"],
+  languages: ["JavaScript"],
   fullDescription:
     " Comprehensive color system with primary blue If youre planning to display multiple projects in the future, then change ProjectGallery to accept a projects array and iterate like",
    media: [

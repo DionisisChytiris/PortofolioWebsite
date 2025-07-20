@@ -12,17 +12,15 @@ const project = {
   opacity: false,
   technologies: [
     "React",
-    "Node.js",
-    "PostgreSQL",
-    "Socket.io",
-    "JWT",
-    "Tailwind CSS",
+    "axios",
+    "Vite"
   ],
-  languages: ["JavaScript", "TypeScript", "SQL"],
+  languages: ["JavaScript", "Typescript", "CSS"],
   fullDescription:
     " Comprehensive color system with primary blue If youre planning to display multiple projects in the future, then change ProjectGallery to accept a projects array and iterate like",
   media: [
     { type: "image", src: "/websites/porto.png" },
+    { type: "video", src: "/websites/adminVideo1.mp4" },
     { type: "image", src: "/websites/porto1.png" },
     { type: "image", src: "/websites/porto2.png" },
     { type: "image", src: "/websites/porto3.png" },

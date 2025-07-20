@@ -11,6 +11,7 @@ import WorldTriviaWebsite from "./pages/WorldTriviaWebsite";
 import GreekGeoWebsite from "./pages/GreekGeoWebsite";
 import RealMadridFC from "./pages/RealMadridFC";
 import AdminPanel from "./pages/AdminPanel";
+import ApiRealTeam from "./pages/ApiRealTeam";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/greekGeoWebsite" element={<GreekGeoWebsite />} />
         <Route path="/realMadrid" element={<RealMadridFC />} />
         <Route path="/adminPanel" element={<AdminPanel />} />
+        <Route path="/apiRealTeam" element={<ApiRealTeam />} />
       </Routes>
       <Footer />
     </>

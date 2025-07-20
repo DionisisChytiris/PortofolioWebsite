@@ -18,7 +18,8 @@ const project = {
     "React Native",
     "Expo",
     "Redux Toolkit",
-    "Node.js",
+    "Node",
+    "Express",
     "MongoDB",
     "Google Analytics",
   ],
@@ -53,7 +54,7 @@ const project = {
     "Optimizing database queries for large datasets",
     "Creating responsive design for all devices",
   ],
-  completionDate: "October 2024",
+  completionDate: "October 2023",
   iosLink: "https://apps.apple.com/app/id6504780092",
   androidLink:
     "https://play.google.com/store/apps/details?id=com.greekgeographyquizapp.dion&pli=1",
