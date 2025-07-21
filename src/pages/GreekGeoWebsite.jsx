@@ -21,11 +21,11 @@ const project = {
   fullDescription:
     " Comprehensive color system with primary blue If youre planning to display multiple projects in the future, then change ProjectGallery to accept a projects array and iterate like",
    media: [
+     { type: "video", src: "/websites/vid4.mp4" },
     { type: "image", src: 'greekApp.png' },
     { type: "image", src: '/websites/imgg1.png' },
     { type: "image", src: '/websites/imgg2.png' },
     { type: "image", src: '/websites/imgg3.png' },
-    // { type: "video", src: "quizVid1.mp4" },
   ],  
   images: [
     'greekApp.png',

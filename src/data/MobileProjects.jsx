@@ -3,7 +3,7 @@ export const mobileProjects = [
     id: 1,
     title: "World Wise Trivia",
     description:
-      "A comprehensive React Native Expo app for tracking workouts, nutrition, and health metrics with real-time progress visualization and social sharing.",
+      "Explore the world with quizzes in your language. Featuring a clean, responsive design and powered by Redux Toolkit, NestJS, PostgreSQL, and Google Maps. It adapts smoothly to your device, theme, and language preferences.",
     technologies: ["React Native", "Expo", "Redux","Nest", "PostgreSQL", "Google Maps", 'i18next', 'Typescript'],
     imageUrl:'mainimg.png',
     // imageUrl:
@@ -14,7 +14,7 @@ export const mobileProjects = [
     id: 2,
     title: "Greek Geography Quiz",
     description:
-      "Feature-rich mobile application for discovering, sharing, and collaborating on recipes with friends. Includes image recognition for ingredients and personalized recommendations.",
+      "Challenge yourself with engaging geography quizzes and unlock new levels by collecting coins. Built with React Native Expo and powered by a robust Node.js backend. Greek Geography Quiz offers a smooth, responsive experience.",
     technologies: [
       "React Native",
       "Expo",
