@@ -43,7 +43,7 @@ const project = {
     "React Native Expo mobile app for iOS and Android",
     "State management with Redux Toolkit",
     "Backend powered by Node.js, Express, and MongoDB",
-    "Integrated Google Analytics for user insights",
+    "Google Analytics integration to track user engagement",
     "TypeScript for robust and scalable code",
     "Interactive contact form for user feedback",
     "Responsive UI for smooth experience on all devices",

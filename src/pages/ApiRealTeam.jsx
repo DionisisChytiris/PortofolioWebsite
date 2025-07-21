@@ -8,7 +8,7 @@ import Technologies from "./templates/Technologies";
 const project = {
   photo:
     "/websites/api.png",
-  title: "Api Real Madrid FC Men Team",
+  title: "Api - Real Madrid FC Men's Team",
   category: "Web Project",
   opacity: false,
   technologies: [
@@ -69,7 +69,7 @@ function ApiRealTeam() {
     <div>
       <div className="h-auto bg-gray-200 dark:bg-gray-700 px-4 sm:px-8 md:px-16 lg:px-22  py-8">
          <div className="fixed top-[130px] md:top-[100px] right-4 md:right-10 rounded-xl bg-gray-500/80 text-white text-right text-[12px] md:text-[14px] py-2 px-4 z-50">
-           World Wise Trivia Website
+           Real Madrid FC Men's Team Api
         </div>
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-8">
           {/* Project Header */}

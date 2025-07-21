@@ -1,7 +1,7 @@
 export const ApiProjects =  [
   {
     id: 1,
-    title: "Real Madrid FC Men Team Fast API",
+    title: "Real Madrid FC Men's Team API",
     description:
       "Full-stack e-commerce platform with advanced product filtering, real-time inventory management, secure payment processing, and customer analytics dashboard.",
     technologies: ["Python", "FastAPI", "MongoDB"],
