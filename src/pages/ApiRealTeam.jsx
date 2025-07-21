@@ -22,7 +22,9 @@ const project = {
     { type: "video", src: "/websites/vid1.mp4" },
     { type: "image", src: "/FastAPI.png" },
     { type: "image", src: "/websites/api.png" },
-    { type: "image", src: "/websites/api.png" },
+    { type: "image", src: "/websites/real10.png" },
+    { type: "image", src: "/websites/api1.png" },
+    { type: "image", src: "/websites/api2.png" }
     // { type: "image", src: "/websites/trivia4.png" },
     // { type: "image", src: "/websites/trivia6.png" },
     // { type: "image", src: "/websites/trivia5.png" },
