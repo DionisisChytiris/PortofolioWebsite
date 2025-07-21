@@ -15,7 +15,7 @@ const project = {
     "FastAPI",
     "MongoDB",
   ],
-  languages: ["JavaScript"],
+  languages: ["Python"],
   fullDescription:
     "This project is a RESTful API built with FastAPI and MongoDB that provides detailed information and images for Real Madrid's men's first team players. It powers a dedicated player info page on a custom-built Real Madrid website, allowing dynamic content retrieval and smooth frontend integration.",
   media: [
