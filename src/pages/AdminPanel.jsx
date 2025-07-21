@@ -10,14 +10,10 @@ const project = {
   title: "Admin Panel Website",
   category: "Web Project",
   opacity: false,
-  technologies: [
-    "React",
-    "axios",
-    "Vite"
-  ],
+  technologies: ["React", "Vite", "axios"],
   languages: ["JavaScript", "Typescript", "CSS"],
   fullDescription:
-    " Comprehensive color system with primary blue If youre planning to display multiple projects in the future, then change ProjectGallery to accept a projects array and iterate like",
+    "This admin panel is a web application built with React and Vite that allows centralized management of user messages from two mobile apps and their promotional websites. Powered by a Node.js backend using Express and NestJS, it connects to both MongoDB and PostgreSQL databases, supports real-time and email notifications, and offers a responsive UI for efficient message handling and replies.",
   media: [
     { type: "image", src: "/websites/porto.png" },
     { type: "video", src: "/websites/adminVideo1.mp4" },
@@ -25,8 +21,8 @@ const project = {
     { type: "image", src: "/websites/porto2.png" },
     { type: "image", src: "/websites/porto3.png" },
     { type: "image", src: "/websites/porto4.png" },
-    
-    // { type: "video", 
+
+    // { type: "video",
     // src: "quizVid2.mp4" },
   ],
   images: [
@@ -37,22 +33,26 @@ const project = {
     "https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=800",
   ],
   features: [
-    "Kanban board interface",
-    "Team collaboration tools",
-    "Time tracking and reporting",
-    "File attachments and comments",
-    "Custom project templates",
-    "Real-time notifications",
-    "Advanced filtering and search",
+    "Centralized inbox for all projects",
+    "Real-time message updates with notifications",
+    "Email notifications for new messages",
+    "Responsive React + Vite UI",
+    "Built with Node.js, Express, and NestJS backend",
+    "Integrated with MongoDB and PostgreSQL",
+    "Message filtering and search capabilities",
+    "User message tagging and status updates",
+    "Quick reply system and threaded responses",
   ],
   challenges: [
-    "Implementing real-time collaboration",
-    "Designing intuitive drag-and-drop interface",
-    "Optimizing database queries for large datasets",
-    "Creating responsive design for all devices",
+    "Handling multiple data sources (MongoDB & PostgreSQL)",
+    "Implementing real-time updates and notifications",
+    "Designing a clear and intuitive admin interface",
+    "Ensuring secure backend communication",
+    "Managing message consistency across multiple apps",
+    "Scalable architecture for growing user base",
   ],
-  websiteLink:"https://greek-geography-admin-page.vercel.app/",
-  githubLink:"https://github.com/DionisisChytiris/GreekGeographyAdminPage"
+  websiteLink: "https://greek-geography-admin-page.vercel.app/",
+  githubLink: "https://github.com/DionisisChytiris/GreekGeographyAdminPage",
 };
 
 function AdminPanel() {

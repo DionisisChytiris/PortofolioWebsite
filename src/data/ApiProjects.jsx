@@ -3,7 +3,7 @@ export const ApiProjects =  [
     id: 1,
     title: "Real Madrid FC Men's Team API",
     description:
-      "Full-stack e-commerce platform with advanced product filtering, real-time inventory management, secure payment processing, and customer analytics dashboard.",
+      "A FastAPI + MongoDB API that delivers Real Madrid men's first team player data and images for use on a custom website.",
     technologies: ["Python", "FastAPI", "MongoDB"],
     imageUrl:'/websites/api.png',
     // imageUrl:

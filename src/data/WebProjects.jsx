@@ -51,15 +51,11 @@ export const webProjects = [
     id: 4,
     title: "Administration Panel",
     description:
-      "Enterprise-grade business intelligence platform with customizable dashboards, predictive analytics, automated reporting, and multi-source data integration.",
+      "A React + Vite admin panel for viewing and responding to user messages from multiple apps and websites. Messages are received from backend services built with Node.js, Express, NestJS, MongoDB, and PostgreSQL.",
     technologies: [
       "React+Vite",
-      "Redux Toolkit",
-      "i18next",
-      "Tailwind CSS",
-      "Node",
-      "MongoDB",
-      "Express",
+      "Typescript",
+      "axios"
     ],
     imageUrl: "adminPanel.png",
     // imageUrl:
