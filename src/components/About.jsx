@@ -10,9 +10,9 @@ import {
   SiPostgresql,
   SiTailwindcss,
   SiRedux,
-   SiPython,
-   SiVercel,
-   SiDocker,
+  SiPython,
+  SiVercel,
+  SiDocker,
   SiPostman,
 } from "react-icons/si";
 import { MdDevices } from "react-icons/md";
@@ -38,7 +38,7 @@ function About() {
               className="about-image"
             />
             <div className="experience-badge">
-              <span className="experience-years">5+</span>
+              <span className="experience-years">3+</span>
               <span className="experience-text">
                 Years
                 <br />
@@ -69,7 +69,7 @@ function About() {
             </h4>
             <div className="flex flex-wrap">
               <div className="flex-none basis-1/2 min-w-[250px] mb-6">
-              {/* <div className="flex-none basis-1/3  mb-6"> */}
+                {/* <div className="flex-none basis-1/3  mb-6"> */}
                 <h5 className="skill-category-title">Frontend</h5>
                 <div className="skills-list">
                   <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
@@ -135,7 +135,7 @@ function About() {
                   <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
                     <SiNestjs className="text-red-600 text-[1rem] mr-2" />
                     <span className="text-base text-gray-600 dark:text-gray-300">
-                      AWS & Firebase
+                      Nest JS
                     </span>
                   </div>
                   <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
@@ -150,46 +150,54 @@ function About() {
                       PostgreSQL
                     </span>
                   </div>
-                  <h5 className="skill-category-title mt-12">Extras</h5>
-                  <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
-                    <SiPython className="text-green-700 dark:text-green-200 text-[1rem] mr-2" />
-                    <span className="text-base text-gray-600 dark:text-gray-300">
-                      Python
-                    </span>
-                  </div>
-                  <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
-                    <SiVercel className="text-black dark:text-white text-[1rem] mr-2" />
-                    <span className="text-base text-gray-600 dark:text-gray-300">
-                      Vercel
-                    </span>
-                  </div>
-                  <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
-                     <img src='render.png' alt="Description" className="w-6 h-auto bg-gray-400 rounded-md mr-2 -ml-1" />
-                    <span className="text-base text-gray-600 dark:text-gray-300">
-                      Render
-                    </span>
-                  </div>
-                  <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
-                    <img src='neon1.png' alt="Description" className="w-6 h-auto rounded-md mr-2 -ml-1" />
-                    <span className="text-base text-gray-600 dark:text-gray-300">
-                      Neon
-                    </span>
-                  </div>
-                  <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
-                    <SiDocker className="text-blue-500 dark:text-blue-300 text-[1rem] mr-2" />
-                    <span className="text-base text-gray-600 dark:text-gray-300">
-                      Docker
-                    </span>
-                  </div>
-                  <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
-                    <SiPostman className="text-orange-500 dark:text-orange-300 text-[1rem] mr-2" />
-                    <span className="text-base text-gray-600 dark:text-gray-300">
-                      Postman
-                    </span>
-                  </div>
+                </div>
+
+                <h5 className="skill-category-title mt-12">Extras</h5>
+                <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
+                  <SiPython className="text-green-700 dark:text-green-200 text-[1rem] mr-2" />
+                  <span className="text-base text-gray-600 dark:text-gray-300">
+                    Python
+                  </span>
+                </div>
+                <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
+                  <SiVercel className="text-black dark:text-white text-[1rem] mr-2" />
+                  <span className="text-base text-gray-600 dark:text-gray-300">
+                    Vercel
+                  </span>
+                </div>
+                <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
+                  <img
+                    src="render.png"
+                    alt="Description"
+                    className="w-6 h-auto bg-gray-400 rounded-md mr-2 -ml-1"
+                  />
+                  <span className="text-base text-gray-600 dark:text-gray-300">
+                    Render
+                  </span>
+                </div>
+                <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
+                  <img
+                    src="neon1.png"
+                    alt="Description"
+                    className="w-6 h-auto rounded-md mr-2 -ml-1"
+                  />
+                  <span className="text-base text-gray-600 dark:text-gray-300">
+                    Neon
+                  </span>
+                </div>
+                <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
+                  <SiDocker className="text-blue-500 dark:text-blue-300 text-[1rem] mr-2" />
+                  <span className="text-base text-gray-600 dark:text-gray-300">
+                    Docker
+                  </span>
+                </div>
+                <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
+                  <SiPostman className="text-orange-500 dark:text-orange-300 text-[1rem] mr-2" />
+                  <span className="text-base text-gray-600 dark:text-gray-300">
+                    Postman
+                  </span>
                 </div>
               </div>
-
 
               {/* <div className="skill-category">
                 <h5 className="skill-category-title">Extra</h5>
