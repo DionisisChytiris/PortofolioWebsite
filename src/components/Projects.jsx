@@ -51,10 +51,10 @@ function Projects() {
                   <h3 className="text-xl font-bold text-[#212529] mb-3">
                     {project.title}
                   </h3>
-                  <p className="text-[0.9rem] font-bold text-[#212529] dark:text-gray-700 mb-6">
+                  <p className="text-[0.9rem] font-bold text-[#212529] dark:text-gray-700 mb-6 hidden md:block">
                     {project.description}
                   </p>
-                  <div className="flex flex-wrap mt-auto">
+                  <div className="flex-wrap mt-auto hidden md:block">
                     {project.technologies.map((tech, index) => (
                       <span
                         key={index}
@@ -93,10 +93,10 @@ function Projects() {
                   <h3 className="text-xl font-bold text-[#212529] mb-3">
                     {project.title}
                   </h3>
-                  <p className="text-[0.9rem] font-bold text-[#212529] dark:text-gray-700 mb-6">
+                  <p className="text-[0.9rem] font-bold text-[#212529] dark:text-gray-700 mb-6 hidden md:block">
                     {project.description}
                   </p>
-                  <div className="flex flex-wrap mt-auto">
+                  <div className="flex-wrap mt-auto hidden md:block">
                     {project.technologies.map((tech, index) => (
                       <span
                         key={index}
@@ -136,10 +136,10 @@ function Projects() {
                   <h3 className="text-xl font-bold text-[#212529] mb-3">
                     {project.title}
                   </h3>
-                  <p className="text-[0.9rem] font-bold text-[#212529] dark:text-gray-700 mb-6">
+                  <p className="text-[0.9rem] font-bold text-[#212529] dark:text-gray-700 mb-6 hidden md:block">
                     {project.description}
                   </p>
-                  <div className="flex flex-wrap mt-auto">
+                  <div className="flex-wrap mt-auto hidden md:block">
                     {project.technologies.map((tech, index) => (
                       <span
                         key={index}
