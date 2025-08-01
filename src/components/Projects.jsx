@@ -54,7 +54,7 @@ function Projects() {
                   <p className="text-[0.9rem] font-bold text-[#212529] dark:text-gray-700 mb-6 hidden md:block">
                     {project.description}
                   </p>
-                  <div className="flex-wrap mt-auto hidden md:block">
+                  <div className="flex-wrap mt-auto hidden md:flex">
                     {project.technologies.map((tech, index) => (
                       <span
                         key={index}
@@ -96,7 +96,7 @@ function Projects() {
                   <p className="text-[0.9rem] font-bold text-[#212529] dark:text-gray-700 mb-6 hidden md:block">
                     {project.description}
                   </p>
-                  <div className="flex-wrap mt-auto hidden md:block">
+                  <div className="flex-wrap mt-auto hidden md:flex">
                     {project.technologies.map((tech, index) => (
                       <span
                         key={index}
@@ -139,7 +139,7 @@ function Projects() {
                   <p className="text-[0.9rem] font-bold text-[#212529] dark:text-gray-700 mb-6 hidden md:block">
                     {project.description}
                   </p>
-                  <div className="flex-wrap mt-auto hidden md:block">
+                  <div className="flex-wrap mt-auto hidden md:flex">
                     {project.technologies.map((tech, index) => (
                       <span
                         key={index}

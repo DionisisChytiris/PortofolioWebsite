@@ -3,7 +3,8 @@ import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 function SocialMediaBtns() {
   return (
-    <div className="social-links">
+    <div style={{ display: "flex", flexDirection: "row" }}>
+      {/* <div className="social-links"> */}
       <a
         href="https://github.com/DionisisChytiris"
         target="_blank"

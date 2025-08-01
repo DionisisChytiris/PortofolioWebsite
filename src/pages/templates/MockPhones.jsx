@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Cuboid as Android, ChevronLeft, ChevronRight } from "lucide-react";
 
-function MockPhones({screenshots}) {
+function MockPhones({ screenshots }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -13,15 +13,16 @@ function MockPhones({screenshots}) {
   };
 
   return (
-    <div className=" pt-0 md:pt-10">
+    <div className="pt-0 md:pt-10 md:pb-10">
       {/* Phone Mockups */}
       <div
-        className="relative pt-16 pb-10 flex justify-center items-center overflow-hidden " // Changed overflow-hidden to overflow-x-auto
+        className="relative pt-16 pb-10 flex justify-center items-center overflow-hidden md:overflow-visible" // Changed overflow-hidden to overflow-x-auto
       >
+         
         <div className="sm:flex sm:flex-col md:flex-row">
           {/* Left Phone */}
           {screenshots[currentIndex] && (
-            <div className="relative w-[12rem] h-[25.75rem]  z-0 transform lg:-translate-x-32 md:-translate-x-10  sm:-translate-y-14 md:-translate-y-0 shrink-0 grow-0 basis-auto -rotate-0 shadow-2xl shadow-gray-900 dark:shadow-gray-600 rounded-[1.3rem]">
+            <div className="relative w-[12rem] h-[25.75rem]  z-0 transform xl:-translate-x-32 lg:-translate-x-[60px] md:-translate-x-10  sm:-translate-y-14 md:-translate-y-0 shrink-0 grow-0 basis-auto -rotate-0 shadow-2xl shadow-gray-900 dark:shadow-gray-600 rounded-[1.3rem]">
               <div className="absolute inset-0 bg-black rounded-[1.3rem] p-2">
                 <div className="relative w-full h-full bg-white rounded-[1rem] overflow-hidden">
                   {/* <div className="absolute bottom-0 left-0 w-full h-[0.65rem] bg-black z-0" /> */}
@@ -39,7 +40,7 @@ function MockPhones({screenshots}) {
 
           {/* Center Phone */}
           {screenshots[currentIndex + 1] && (
-            <div className="relative w-[14rem] h-[29.75rem] z-10 transform -translate-y-12 shrink-0 grow-0 basis-auto hidden md:block shadow-2xl shadow-gray-700 dark:shadow-gray-600 rounded-[1.5rem]">
+            <div className="relative w-[14rem] h-[29.75rem] z-10 transform -translate-y-12 shrink-0 grow-0 basis-auto hidden md:block shadow-2xl shadow-gray-700 dark:shadow-gray-600 rounded-[1.5rem] mr-[-40px] md:mr-[0px]">
               <div className="absolute inset-0 bg-black rounded-[1.5rem] p-2">
                 <div className="relative w-full h-full bg-white rounded-[1rem] overflow-hidden">
                   <div className="absolute bottom-0 left-0 w-full h-[0.65rem] bg-black z-0" />
@@ -57,7 +58,7 @@ function MockPhones({screenshots}) {
 
           {/* Right Phone */}
           {screenshots[currentIndex + 2] && (
-            <div className="relative w-[12rem] h-[25.75rem]  z-0 transform lg:translate-x-32 md:translate-x-10  shrink-0 grow-0 basis-auto rotate-0  hidden md:block shadow-2xl shadow-gray-900 dark:shadow-gray-600 rounded-[1.5rem]">
+            <div className="relative w-[12rem] h-[25.75rem]  z-0 transform xl:translate-x-32 lg:translate-x-[60px] md:translate-x-10  shrink-0 grow-0 basis-auto rotate-0  hidden md:block shadow-2xl shadow-gray-900 dark:shadow-gray-600 rounded-[1.5rem]">
               <div className="absolute inset-0 bg-black w- rounded-[1.5rem] p-2">
                 <div className="relative w-full h-full bg-white rounded-[1rem] overflow-hidden">
                   <div className="absolute bottom-0 left-0 w-full h-[0.65rem] bg-black z-0" />
@@ -68,15 +69,39 @@ function MockPhones({screenshots}) {
                     className="w-full h-full object-cover relative z-10"
                   />
                 </div>
-                 {/* <div className="absolute left-[86px] top-0 z-[800]  w-[20px] h-[19px] bg-black rounded-bl-[45px] rounded-br-[45px]"></div> */}
+                {/* <div className="absolute left-[86px] top-0 z-[800]  w-[20px] h-[19px] bg-black rounded-bl-[45px] rounded-br-[45px]"></div> */}
               </div>
             </div>
           )}
         </div>
+
+         <div className="absolute top-[50%] lg:-left-[2%]  xl:left-0 hidden lg:block">
+          {currentIndex === 0 ? null : (
+            <button
+              onClick={prevSlide}
+              className="p-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition"
+              aria-label="Previous screenshot"
+            >
+              <ChevronLeft className="w-4 md:w-6 h-4 md:h-6" />
+            </button>
+          )}
+        </div>
+        <div className="absolute top-[50%] lg:-right-[2%]  xl:right-0 hidden lg:block">
+          {screenshots.length > 0 && currentIndex < screenshots.length - 1 && (
+          <button
+            onClick={nextSlide}
+            className="p-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition"
+            aria-label="Next screenshot"
+          >
+            <ChevronRight className="w-4 md:w-6 h-4 md:h-6" />
+          </button>
+        )}
+        </div>
+      
       </div>
 
       {/* Carousel Navigation */}
-      <div className="flex justify-center items-center  gap-4 mb-20">
+      <div className="flex justify-center items-center gap-4 mb-20 lg:hidden">
         {currentIndex === 0 ? null : (
           <button
             onClick={prevSlide}
