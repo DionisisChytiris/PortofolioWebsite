@@ -77,7 +77,7 @@ function NavBar() {
   };
 
   return (
-    <header className="flex flex-col md:flex-row justify-between items-center px-[5%] py-6 bg-white/95 dark:bg-gray-900 dark:shadow-[0_4px_6px_-1px_rgba(255,255,255,0.15)] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)]  sticky top-0 z-[100] backdrop-blur-md">
+    <header className="flex flex-col md:flex-row justify-between items-center px-[5%] py-4 bg-white/95 dark:bg-gray-900 dark:shadow-[0_4px_6px_-1px_rgba(255,255,255,0.15)] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)]  sticky top-0 z-[100] backdrop-blur-md">
       <Link to="/" onClick={() => dispatch(!toggle())}>
         <div className="flex items-center">
           <span className="text-xl font-bold dark:text-gray-300 text-gray-800">
