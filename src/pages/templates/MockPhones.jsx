@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Cuboid as Android, ChevronLeft, ChevronRight } from "lucide-react";
 
 function MockPhones({ screenshots }) {
@@ -11,6 +11,13 @@ function MockPhones({ screenshots }) {
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => prevIndex - 1);
   };
+  
+  useEffect(() => {
+    screenshots.forEach(({ phone }) => {
+      const img = new Image();
+      img.src = phone;
+    });
+  }, []);
 
   return (
     <div className="pt-0 md:pt-10 md:pb-10">
@@ -46,8 +53,6 @@ function MockPhones({ screenshots }) {
                   <div className="absolute bottom-0 left-0 w-full h-[0.65rem] bg-black z-0" />
                   <img
                     src={screenshots[currentIndex + 1].phone}
-                    loading="lazy"
-                    // src={getImage(currentIndex+1)}
                     alt="App Screenshot 2"
                     className="w-full h-full object-cover relative z-10"
                   />

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 function MockTablet({screenshots}) {
@@ -21,6 +21,13 @@ const nextSlide = () => {
     Math.min(screenshots.length - 1, prevIndex + 1)
   );
 };
+
+useEffect(() => {
+  screenshots.forEach(({ phone }) => {
+    const img = new Image();
+    img.src = phone;
+  });
+}, []);
 
   return (
     <div>
@@ -59,7 +66,6 @@ const nextSlide = () => {
 
                   <img
                     src={screenshots[currentIndex].phone}
-                    loading="lazy"
                     alt="App Screenshot 2"
                     className="w-full h-full object-contain relative z-10"
                   />
