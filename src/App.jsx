@@ -12,6 +12,7 @@ import GreekGeoWebsite from "./pages/GreekGeoWebsite";
 import RealMadridFC from "./pages/RealMadridFC";
 import AdminPanel from "./pages/AdminPanel";
 import ApiRealTeam from "./pages/ApiRealTeam";
+import FastAiAgentGeography from "./pages/FastAiAgentGeography";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/realMadrid" element={<RealMadridFC />} />
         <Route path="/adminPanel" element={<AdminPanel />} />
         <Route path="/apiRealTeam" element={<ApiRealTeam />} />
+        <Route path="/aiGeography" element={<FastAiAgentGeography />} />
       </Routes>
       <Footer />
     </>

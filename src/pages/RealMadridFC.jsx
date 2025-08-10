@@ -60,6 +60,7 @@ const project = {
     "Managing component styling cleanly with Styled Components",
     "Achieving fast performance with React and Vite integration",
   ],
+   typeofProject:"Website",
   websiteLink: "https://real-madrid-website.vercel.app/",
   githubLink: "https://github.com/DionisisChytiris/RealMadridWebsite",
 };

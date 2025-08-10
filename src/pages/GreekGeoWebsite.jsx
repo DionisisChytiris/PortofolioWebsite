@@ -47,6 +47,7 @@ const project = {
     "Encouraging conversions with effective CTAs and layout",
     "Balancing performance and interactivity for smooth browsing",
   ],
+   typeofProject:"Website",
   websiteLink: "https://greek-geography-app-website.vercel.app/",
   githubLink: "https://github.com/DionisisChytiris/GreekGeographyAppWebsite",
 };

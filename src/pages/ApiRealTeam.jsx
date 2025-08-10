@@ -14,6 +14,7 @@ const project = {
     "Python",
     "FastAPI",
     "MongoDB",
+    "Docker"
   ],
   languages: ["Python"],
   fullDescription:
@@ -60,6 +61,7 @@ const project = {
     "Keeping player data consistent and up-to-date",
     "Ensuring smooth integration with the React-based website",
   ],
+   typeofProject:"API",
   websiteLink: "https://real-madrid-team-fast-api.vercel.app/players/",
   githubLink: "https://github.com/DionisisChytiris/RealMadridTeamFastAPI",
 };

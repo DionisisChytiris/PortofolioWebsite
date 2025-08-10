@@ -51,6 +51,7 @@ const project = {
     "Managing message consistency across multiple apps",
     "Scalable architecture for growing user base",
   ],
+   typeofProject:"Project",
   websiteLink: "https://greek-geography-admin-page.vercel.app/",
   githubLink: "https://github.com/DionisisChytiris/GreekGeographyAdminPage",
 };

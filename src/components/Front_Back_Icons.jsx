@@ -10,6 +10,7 @@ import {
   SiPostgresql,
   SiTailwindcss,
   SiPython,
+  SiDocker 
 } from "react-icons/si";
 
 function Front_Back_Icons() {
@@ -49,6 +50,14 @@ function Front_Back_Icons() {
       <img
         src="/FastAPI.png"
         alt="FastAPI"
+        className="tech-icon w-6 h-6"
+      />
+      <div className="tech-icon dark:bg-gray-300">
+        <SiDocker className="text-blue-500 text-[1.8rem]" />
+      </div>
+      <img
+        src="/langchain.png"
+        alt="LangChain"
         className="tech-icon w-6 h-6"
       />
     </div>

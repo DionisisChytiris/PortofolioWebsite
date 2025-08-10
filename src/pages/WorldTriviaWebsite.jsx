@@ -64,6 +64,7 @@ const project = {
     "Keeping the content structure scalable for future updates",
     "Maintaining accessibility standards across all devices",
   ],
+   typeofProject:"Website",
   websiteLink: "https://world-wise-trivia-app-website.vercel.app/",
   githubLink: "https://github.com/DionisisChytiris/WorldWiseTriviaAppWebsite",
 };
