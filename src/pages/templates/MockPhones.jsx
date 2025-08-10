@@ -46,6 +46,7 @@ function MockPhones({ screenshots }) {
                   <div className="absolute bottom-0 left-0 w-full h-[0.65rem] bg-black z-0" />
                   <img
                     src={screenshots[currentIndex + 1].phone}
+                    loading="lazy"
                     // src={getImage(currentIndex+1)}
                     alt="App Screenshot 2"
                     className="w-full h-full object-cover relative z-10"

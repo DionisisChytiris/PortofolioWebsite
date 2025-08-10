@@ -11,6 +11,7 @@ function ProjectHeader({ project }) {
       <div className="relative ">
         <img
           src={project.photo}
+          loading="lazy"
           alt={project.title}
           className="w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[400px] object-cover  object-top "
         />

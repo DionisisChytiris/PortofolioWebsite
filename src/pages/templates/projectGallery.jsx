@@ -38,6 +38,7 @@ function ProjectGallery({ project }) {
             {item.type === "image" ? (
               <img
                 src={item.src}
+                loading="lazy"
                 alt="image"
                 className="w-full h-24 sm:h-32 md:h-48 transition-transform duration-300 scale-125 group-hover:scale-100 object-cover"
               />

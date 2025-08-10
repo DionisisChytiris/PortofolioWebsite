@@ -59,6 +59,7 @@ const nextSlide = () => {
 
                   <img
                     src={screenshots[currentIndex].phone}
+                    loading="lazy"
                     alt="App Screenshot 2"
                     className="w-full h-full object-contain relative z-10"
                   />
