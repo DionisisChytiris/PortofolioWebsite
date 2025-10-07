@@ -26,7 +26,8 @@ function Projects() {
           </h2>
           <div className="flex flex-row gap-10">
             <a
-              href="/full_stack_dev_cv.pdf"
+              // href="/full_stack_dev_cv.pdf"
+              href="/Dionysios_Chytiris_FullStack_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-black dark:text-white hover:text-green-300"
@@ -36,7 +37,8 @@ function Projects() {
               View CV
             </a>
             <a
-              href="/full_stack_dev_cv.pdf"
+              // href="/full_stack_dev_cv.pdf"
+              href="/Dionysios_Chytiris_FullStack_CV.pdf"
               download="DownloadCV.pdf"
               className="flex items-center gap-2 text-black dark:text-white hover:text-orange-300"
             >
