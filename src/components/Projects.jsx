@@ -29,7 +29,7 @@ function Projects() {
               href="/full_stack_dev_cv.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-white hover:text-green-300"
+              className="flex items-center gap-2 text-black dark:text-white hover:text-green-300"
             >
               {/* <FaFilePdf size={20} /> */}
               <HiDocumentText size={20} />
@@ -38,7 +38,7 @@ function Projects() {
             <a
               href="/full_stack_dev_cv.pdf"
               download="DownloadCV.pdf"
-              className="flex items-center gap-2 text-white hover:text-orange-300"
+              className="flex items-center gap-2 text-black dark:text-white hover:text-orange-300"
             >
               {/* <FaDownload size={20} /> */}
               <HiDownload size={20} />

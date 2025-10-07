@@ -21,14 +21,14 @@ function SocialMediaBtns() {
       >
         <FaLinkedin className="text-blue-600 text-[1.5rem]" />
       </a>
-      <a
+      {/* <a
         href="https://twitter.com"
         target="_blank"
         rel="noopener noreferrer"
         className="social-button"
       >
         <FaYoutube className="text-red-600 text-[1.5rem]" />
-      </a>
+      </a> */}
       {/* <a
         href="https://dribbble.com"
         target="_blank"
