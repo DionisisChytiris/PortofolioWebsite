@@ -3,6 +3,7 @@ import {
   SiJavascript,
   SiNodedotjs,
   SiReact,
+  SiTypescript,
   SiHtml5,
   SiCss3,
   SiNestjs,
@@ -24,6 +25,9 @@ function Front_Back_Icons() {
       </div>
       <div className="tech-icon dark:bg-gray-300">
         <SiJavascript className="text-yellow-500 hover:scale-110 transition-transform duration-300 text-[1.5rem]" />
+      </div>
+      <div className="tech-icon dark:bg-grey-300">
+        <SiTypescript className="text-blue-600 hover:scale-110 transition-transform duration-300 text-[1.5rem]"/>
       </div>
       <div className="tech-icon dark:bg-gray-300">
         <SiReact className="text-blue-600 text-[1.5rem]" />
