@@ -16,17 +16,19 @@ test.describe('Projects', () => {
       console.log(`Testing project link ${i + 1}: ${href}`);
 
       const [newPage] = await Promise.all([
-        context.waitForEvent('page').catch(() => null),
+        context.waitForEvent('page').catch(() => null), // listen for popup
         link.click(),
       ]);
 
       if (newPage) {
-        // PDF or file links don’t trigger load events, so skip waitForLoadState
-        if (!href.endsWith('.pdf') && !href.endsWith('.docx')) {
+        // PDF, DOCX, etc. open in a new tab but don't trigger load events
+        if (href.endsWith('.pdf') || href.endsWith('.docx')) {
+          expect(newPage.url()).toContain(href.replace(/^\//, '')); // only check the URL
+        } else {
+          // HTML page — wait for DOM content
           await newPage.waitForLoadState('domcontentloaded', { timeout: 10000 });
+          expect(newPage.url()).toContain(href.replace(/^\//, ''));
         }
-        await expect(newPage.url()).toBeTruthy();
-        expect(newPage.url()).toContain(href.replace(/^\//, '')); // match relative or absolute
         await newPage.close();
       } else {
         // Same-page navigation
@@ -38,13 +40,13 @@ test.describe('Projects', () => {
           const escapedHref = href.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
           await expect(page).toHaveURL(new RegExp(escapedHref));
         }
+        // Reset for next iteration
         await page.goto('/');
         await page.getByRole('button', { name: 'View My Work' }).click();
       }
     }
   });
 });
-
 
 
 // import { test, expect } from '@playwright/test';
