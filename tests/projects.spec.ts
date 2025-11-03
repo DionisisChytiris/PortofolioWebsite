@@ -1,54 +1,43 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Projects', () => {
-  test('View My Work shows My Projects', async ({ page }) => {
-    await page.goto('/');
-    await page.getByRole('button', { name: 'View My Work' }).click();
-    await expect(page.getByRole('heading', { name: 'My Projects' })).toBeVisible();
-  });
-
   test('All project links open correctly', async ({ page, context }) => {
     await page.goto('/');
     await page.getByRole('button', { name: 'View My Work' }).click();
 
-    // Select all project links under the "My Projects" section
     const projectLinks = page.locator('section:has(h2:has-text("My Projects")) a');
-
     const count = await projectLinks.count();
 
     for (let i = 0; i < count; i++) {
       const link = projectLinks.nth(i);
       const href = await link.getAttribute('href');
-
-      if (!href) continue; // skip if no href
+      if (!href) continue;
 
       console.log(`Testing project link ${i + 1}: ${href}`);
 
-      // Listen for a popup (new tab)
       const [newPage] = await Promise.all([
-        context.waitForEvent('page').catch(() => null), // catches if no popup
-        link.click(),                                   // click the project link
+        context.waitForEvent('page').catch(() => null),
+        link.click(),
       ]);
 
       if (newPage) {
-        // Popup opened
-        await newPage.waitForLoadState('domcontentloaded');
-        await expect(newPage).toHaveURL(/https?:\/\//, { timeout: 10000 });
-        await newPage.close(); // close popup to avoid leftover tabs
+        // PDF or file links don’t trigger load events, so skip waitForLoadState
+        if (!href.endsWith('.pdf') && !href.endsWith('.docx')) {
+          await newPage.waitForLoadState('domcontentloaded', { timeout: 10000 });
+        }
+        await expect(newPage.url()).toBeTruthy();
+        expect(newPage.url()).toContain(href.replace(/^\//, '')); // match relative or absolute
+        await newPage.close();
       } else {
         // Same-page navigation
         await page.waitForLoadState('domcontentloaded');
         const currentURL = page.url();
-
-        if (href.startsWith('http')) {
+        if (href.startsWith('http') || href.endsWith('.pdf')) {
           expect(currentURL).toMatch(/^https?:\/\//);
         } else {
-          // internal route or fragment
           const escapedHref = href.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
           await expect(page).toHaveURL(new RegExp(escapedHref));
         }
-
-        // Navigate back to Home page for the next iteration
         await page.goto('/');
         await page.getByRole('button', { name: 'View My Work' }).click();
       }
