@@ -27,7 +27,7 @@ useEffect(() => {
     const img = new Image();
     img.src = phone;
   });
-}, []);
+}, [screenshots]);
 
   return (
     <div>

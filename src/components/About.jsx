@@ -14,6 +14,7 @@ import {
   SiVercel,
   SiDocker,
   SiPostman,
+  SiTypescript,
 } from "react-icons/si";
 import { MdDevices } from "react-icons/md";
 
@@ -81,7 +82,13 @@ function About() {
                   <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
                     <SiJavascript className="text-yellow-500 hover:scale-110 transition-transform duration-300 text-[1rem] mr-2" />
                     <span className="text-base text-gray-600 dark:text-gray-300">
-                      JavaScript/TypeScript
+                      JavaScript
+                    </span>
+                  </div>
+                  <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">
+                    <SiTypescript className="text-blue-500 hover:scale-110 transition-transform duration-300 text-[1rem] mr-2" />
+                    <span className="text-base text-gray-600 dark:text-gray-300">
+                      TypeScript
                     </span>
                   </div>
                   <div className="flex items-center mb-3 transition-transform duration-300 ease-in-out hover:translate-x-1.5">

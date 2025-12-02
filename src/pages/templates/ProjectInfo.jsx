@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Calendar, MousePointerClick, ExternalLink } from "lucide-react";
+import { Calendar, MousePointerClick} from "lucide-react";
 import { FaGlobe, FaGithub, FaApple, FaAndroid } from "react-icons/fa";
 
 function ProjectInfo({ project }) {
@@ -32,7 +32,7 @@ function ProjectInfo({ project }) {
   //   };
   // }, []);
 
-   useEffect(() => {
+  useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !hasAnimated) {
@@ -60,12 +60,14 @@ function ProjectInfo({ project }) {
       }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentRef = sectionRef.current;
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (sectionRef.current) observer.unobserve(sectionRef.current);
+      if (currentRef) observer.unobserve(currentRef);
     };
   }, [hasAnimated]);
 

@@ -17,7 +17,7 @@ function MockPhones({ screenshots }) {
       const img = new Image();
       img.src = phone;
     });
-  }, []);
+  }, [screenshots]);
 
   return (
     <div className="pt-0 md:pt-10 md:pb-10">
